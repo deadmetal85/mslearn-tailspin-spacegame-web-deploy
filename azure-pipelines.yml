@@ -129,7 +129,7 @@ stages:
 
 - stage: 'Staging'
   displayName: 'Deploy to the staging environment'
-  dependsOn: Dev
+  dependsOn: Test
   jobs:
   - deployment: Deploy
     pool:
